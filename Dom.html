@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="main-heading">Hello, DOM!</h1>
+    <button id="change-text">Change Text</button>
+    <script>
+    
+let heading = document.getElementById('main-heading');
+
+heading.textContent = 'New Text';
+
+let button = document.getElementById('change-text');
+button.addEventListener('click', function () {
+  heading.textContent = 'Aaqib Rasool';
+  heading.style.color="blue"
+});
+
+    </script>
+</body>
+</html>
